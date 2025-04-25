@@ -62,10 +62,9 @@ def predict_image(file_path):
     accuracy = {class_names[i]: round(prediction[i] * 100, 2) for i in range(len(class_names))}
 
     result=class_names[class_label]
-
-    ret = [result, accuracy]
     
-    return f'<mark><em>{result}</em></mark> <p><strong>Accuracy Probability: </strong>{accuracy}</p>'  # Return the predicted class label and accuracy on separate lines
+    # Return the predicted class label and accuracy on separate lines
+    return f'<mark><em>{result}</em></mark> <p><strong>Accuracy Probability: </strong>{accuracy, prediction}</p>'
 
 if __name__ == '__main__':
     app.run(debug=True)
