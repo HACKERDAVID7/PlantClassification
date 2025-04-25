@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  display: flex;
+  justify-content: center;
+
+  overflow-x: hidden;
+}
+
+.parent {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  align-content: center;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+
+  align-content: center;
+}
+
+.background-text {
+  max-width: fit-content;
+  background-color: black;
+  color: white;
+  border-radius: 80px;
+  font-size: 10px;
+  padding: 6px 15px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+button {
+  width: 200px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.div2 button:hover {
+  transform: scale(105%);
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.row {
+  display: flex;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.spacer {
+  width: 25px;
+}
+
+.green {
+  background-color: greenyellow;
+}
+
+/* picker style */
+.input__container--variant {
+  background: linear-gradient(to bottom, #d5ffea, #c8ffe4);
+  border-radius: 30px;
+  max-width: 13em;
+  padding: 1em 1em;
+}
+
+.shadow__input--variant {
+  filter: blur(25px);
+  border-radius: 30px;
+  background-color: #f3fff9;
+  opacity: 0.5;
+}
+
+.input__button__shadow--variant {
+  border-radius: 15px;
+  background-color: #07372c;
+  padding: 10px;
+  border: none;
+}
+
+.input__button__shadow--variant:hover {
+  background-color: #3c6659;
+}
+
+.input__search--variant {
+  width: 13em;
+  align-items: center;
+  border-radius: 13em;
+  outline: none;
+  border: none;
+  padding: 0.8em;
+  font-size: 1.2em;
+  color: #002019;
+  background-color: transparent;
+}
+
+.input__search--variant::placeholder {
+  color: #002019;
+  opacity: 0.7;
+}
+
+.input__container--variant {
+  background: linear-gradient(to bottom, #f3fff9, #f3fff9);
+  border-radius: 1.5em;
+  max-width: 14em;
+  padding: 1em;
+  box-shadow: 0em 1em 3em #beecdc64;
+}
+
+.div1 button {
+  color: white;
+}
